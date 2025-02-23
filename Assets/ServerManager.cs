@@ -52,11 +52,11 @@ public class ServerManager : MonoBehaviour, INetworkRunnerCallbacks
 
         if (result.Ok)
         {
-            Debug.Log("✅ Server started successfully!");
+            Debug.Log("Server started successfully!");
         }
         else
         {
-            Debug.LogError($"❌ Failed to start server: {result.ShutdownReason}");
+            Debug.LogError($"Failed to start server: {result.ShutdownReason}");
         }
     }
     void INetworkRunnerCallbacks.OnConnectedToServer(NetworkRunner runner)
